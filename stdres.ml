@@ -1,6 +1,6 @@
 open Rtype;;
 
-Main.drive "generic" [
+Main.drive "stdres" [
 Title(5,[Rm"Jed Davis"]);
 Title(2,[Tt"<jldavis@cs.oberlin.edu>"]);
 Title(0,[Rm"[REDACTED], Oberlin OH, 44074; 440/[REDACTED] (current)"]);
