@@ -16,8 +16,10 @@ let preamble = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"
     H4 { font-size: 1.4em } H5 { font-size: 1.2em } H6 { font-size: 1.0em }\n\
     .s1 { margin: .78em 0 0 } .s2 { margin: .55em 0 0 } .s3 { margin: .33em 0 0 }\n\
     P { margin: .1667em 0 0 } UL { margin-top: .33em; margin-bottom: 0 } \n\
-    sub.tex { font-size: 1em; margin-left: -.1667em; margin-right: -.125em; vertical-align: -.5ex }\n\
-    sup.tex { font-size: .8em; margin-left: -.36em; margin-right: -.15em; vertical-align: .25em }\n\
+    sub.tex { font-size: 1em; margin-left: -.1667em; \
+              margin-right: -.125em; vertical-align: -.5ex }\n\
+    sup.tex { font-size: .8em; margin-left: -.36em; \
+              margin-right: -.15em; vertical-align: .25em }\n\
     --></style>\n\
     </HEAD>\n<BODY><div class='foo'>\n"
 and postamble = "</div></BODY>\n</HTML>\n"
