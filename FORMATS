@@ -1,10 +1,10 @@
        _ Resume Format Derivation Tree _
        #===============================#
 
-  +-*.pdf ---- Adobe Portable Document Format
-  |
-  | +-*.ps --- Adobe PostScript
-  | |
+    +-*.pdf -- Adobe Portable Document Format
+    |
+    +-*.ps --- Adobe PostScript
+    |
   +-*.dvi ---- TeX Device Independent Output
   |
 +-*.tex ------ LaTeX source; uses the "geometry" package
