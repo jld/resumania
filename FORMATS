@@ -22,6 +22,5 @@
 +-*.rtf ------ Microsoft Rich Text Format
 |
 |
-*.ml --------- OCaml source file; depends on backend code that
-               will be released once it's been properly documented
+*.ml --------- OCaml source file (requires backend code not yet released)
 

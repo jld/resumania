@@ -11,7 +11,7 @@ Section[Rm"Education"];
 Subsect[Rm"Oberlin College, Oberlin, OH"];
 Itemize[
 [Par[Bf"Majors:";Rm" Computer Science (high honors), Mathematics; ";Bf"Minor:";Rm" Chemistry"]];
-[Par[Bf"B.A.";Rm" May 2003; ";Bf"GPA:";Rm" 3.79 (CS), 3.24 (overall); ";Bf"GRE/CS:";Rm" 880 (97th percentile)"]];  (* TODO: recalc the CS GPA *)
+[Par[Bf"B.A.";Rm" May 2003; ";Bf"GPA:";Rm" 3.80 (CS), 3.24 (overall); ";Bf"GRE/CS:";Rm" 880 (97th percentile)"]];
 [Par[Bf"Related Coursework:";Rm" Operating Systems, Computer Organization, Database Systems, Compilers, Computer Graphics, Data Structures and Algorithms (2 semesters), Theory of Computer Science, Group Theory, Linear Algebra, Number Theory, Discrete Mathematics, Multivariable Calculus, Probability, Computer Science Honors"]]; (* HONEME: prune? *)
 ];
 
@@ -33,9 +33,8 @@ Itemize[
 [Par[Rm"Assisted in migrating to the program's new main Unix server, a Sun, from its DEC Alpha predecessor"]];
 [Par[Rm"Took primary responsibility for the program's systems after supervisor's departure in March 2003"]];
 [Par[Rm"Designed and wrote a backup system to take better advantage of the program's tape changer"]]
-(* TODO: TopCoder contract work *)
+(* TODO: TopCoder contract work? *)
 ];
-
 
 Section[Rm"Awards"];
 Itemize[
