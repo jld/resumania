@@ -6,11 +6,12 @@ let esc = Rutil.escape ['<',"&lt;";
 
 let catmap fn li = String.concat "" (List.map fn li)
 
-let preamble = "<HTML>\n<HEAD>
+let preamble = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n\
+    <HTML><HEAD><title></title>\n\
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>\n\
     <style type='text/css'><!--\n\
     .head { text-align: center; margin: 0; font-weight: normal }\n\
-    .foo { font-family: 'Lucida Grande', sans-serif; font-size: 12pt }\n\
-    .foo, H1, H2, H3, H4, H5, H6 { line-height: 1.2em; text-align: left }\n\
+    .foo { font-family: 'Lucida Grande', sans-serif }\n\
     H1 { font-size: 2.5em } H2 { font-size: 2em } H3 { font-size: 1.7em }\n\
     H4 { font-size: 1.4em } H5 { font-size: 1.2em } H6 { font-size: 1.0em }\n\
     .s1 { margin: .78em 0 0 } .s2 { margin: .55em 0 0 } .s3 { margin: .33em 0 0 }\n\
@@ -18,8 +19,8 @@ let preamble = "<HTML>\n<HEAD>
     sub.tex { font-size: 1em; margin-left: -.1667em; margin-right: -.125em; vertical-align: -.5ex }\n\
     sup.tex { font-size: .8em; margin-left: -.36em; margin-right: -.15em; vertical-align: .25em }\n\
     --></style>\n\
-    </HEAD>\n<BODY><font face='Lucida Grande'><div class='foo'>\n"
-and postamble = "</div></font></BODY>\n</HTML>\n"
+    </HEAD>\n<BODY><div class='foo'>\n"
+and postamble = "</div></BODY>\n</HTML>\n"
 
 let entag tag ?(attr) payload = 
   Printf.sprintf "<%s%s>%s</%s>" tag 
