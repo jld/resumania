@@ -19,7 +19,6 @@ Itemize[
 [Par[Bf"Systems:";Rm" Linux, Mac OS X, NetBSD, Solaris, DEC Tru64; Classic MacOS"]];
 [Par[Bf"Languages:";Rm" ";Tt"sh";Rm", ";Tt"sed";Rm", AWK, ";Tt"m4";Rm", Tcl (Expect), Perl; C, C++, Objective-C (gcc, gdb); Scheme, OCaml; AppleScript; ";Spec"TeX";Rm", ";Spec"LaTeX";Rm", ";Tt"troff";Rm", XML, XSLT, HTML; FORTH; Java; SQL (PostgreSQL)"]];
 [Par[Bf"Miscellany:";Rm" OpenGL, Sockets, POSIX, STL (C++ Standard Library), lex/yacc, DNS, Literate Programming (";Tt"CWEB";Rm")"]] (* more? *)
-(* General? * Ability to quickly absorb new concepts/technologies *)
 ];
 
 Section[Rm"Experience"];

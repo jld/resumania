@@ -9,7 +9,7 @@ verbose() {
 put() {
   local ext=$1 text=$2 more=$3
   verbose cp "$stem.$ext" "$dest/"
-  navbar="$navbar&nbsp;<a href='$stem.$ext' target='view'>$text</a> ${more:+
+  navbar="$navbar&bull; <a href='$stem.$ext' target='view'>$text</a> ${more:+
   <small>$more</small>}$br"
 }
 
@@ -20,14 +20,14 @@ put pdf  "PDF"
 put rtf  "Microsoft RTF"
 put ps   "PostScript"
 
-navbar="$navbar$br<small>Precursors:$br"
+navbar="$navbar&nbsp;$br<small>Precursors:$br"
 put dvi "DVI" "(&rarr; PDF, PS)"
 put tex "LaTeX" "(&rarr; DVI)"
 put nr  "<tt>nroff</tt>" "(&rarr; text)"
 put tex "The single source document" "(<a href='http://caml.inria.fr/'\
  target='_blank'>Objective Caml</a> code)"
 
-navbar="$navbar${br}<small>Also:$br"
+navbar="$navbar&nbsp;$br<small>Also:$br"
 put tty  "For teletypes"
 put ansi "For ANSI terminals"
 
