@@ -4,7 +4,6 @@ Main.drive "stdres" [
 Title(5,[Rm"Jed Davis"]);
 Title(2,[Tt"<jldavis@cs.oberlin.edu>"]);
 Title(0,[Rm"[REDACTED], Wynnewood, PA 19096; 610/[REDACTED]"]);
-Title(1,[Bf"Objective: a job in systems programming, system administration, or similar"]);
 (*Title(1,[Bf"Objective: for computers to help people rather than hinder them"]);*)
 
 Section[Rm"Education"];
