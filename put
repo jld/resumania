@@ -1,4 +1,60 @@
 #!/bin/sh
-for i in ml tex dvi ps pdf nr tty txt ansi html rtf
-do cp "$1.$i" "$2/"
-done
+stem=$1 dest=$2 br="<br />
+"
+
+verbose() { 
+  echo + "$@"; "$@"
+}
+
+put() {
+  local ext=$1 text=$2 more=$3
+  verbose cp "$stem.$ext" "$dest/"
+  navbar="$navbar&nbsp;<a href='$stem.$ext' target='view'>$text</a> ${more:+
+  <small>$more</small>}$br"
+}
+
+navbar="<strong>Formats:</strong>$br"
+put html "HTML"
+put txt  "Text"
+put pdf  "PDF"
+put rtf  "Microsoft RTF"
+put ps   "PostScript"
+
+navbar="$navbar$br<small>Precursors:$br"
+put dvi "DVI" "(&rarr; PDF, PS)"
+put tex "LaTeX" "(&rarr; DVI)"
+put nr  "<tt>nroff</tt>" "(&rarr; text)"
+put tex "The single source document" "(<a href='http://caml.inria.fr/'\
+ target='_blank'>Objective Caml</a> code)"
+
+navbar="$navbar${br}<small>Also:$br"
+put tty  "For teletypes"
+put ansi "For ANSI terminals"
+
+navbar="$navbar</small></small>"
+
+cat > "$dest/navbar.html" <<EOF
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title>Jed's Resume Navigation Bar</title></head><body>
+$navbar
+</body></html>
+EOF
+echo "Wrote $dest/navbar.html"
+
+cat > "$dest/index.html" <<EOF
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html><head><title>Jed's Resume Index</title></head>
+<frameset cols="144,*">
+ <frame src="navbar.html" />
+ <frame src="$stem.html" name="view" />
+ <noframes><body>
+$navbar
+ </body></noframes>
+</frameset>
+</html>
+EOF
+echo "Wrote $dest/index.html"
