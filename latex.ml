@@ -1,5 +1,15 @@
 open Rtype;;
 
+let esc = Rutil.escape ['{',"\\{";
+			'}',"\\}";
+			'&',"\\&";
+			'%',"\\%";
+			'#',"\\#";
+			'$',"\\$";
+			'<',"$<$";
+			'>',"$>$";
+			'\\',"$\\backslash$"]
+
 let catmap fn li = String.concat "" (List.map fn li)
 
 let preamble = "\\documentclass{article}\n\
@@ -20,14 +30,14 @@ let preamble = "\\documentclass{article}\n\
 and postamble = "\\end{document}\n"
 
 let trans_il = function
-    Rm(s) -> s
-  | Bf(s) -> "{\\bfseries{}"^s^"}"
-  | It(s) -> "{\\itshape{}"^s^"}"
-  | Tt(s) -> "{\\ttfamily{}"^s^"}"
-  | Sc(s) -> "{\\scshape{}"^s^"}"
+    Rm(s) -> (esc s)
+  | Bf(s) -> "{\\bfseries{}"^(esc s)^"}"
+  | It(s) -> "{\\itshape{}"^(esc s)^"}"
+  | Tt(s) -> "{\\ttfamily{}"^(esc s)^"}"
+  | Sc(s) -> "{\\scshape{}"^(esc s)^"}"
   | Spec("TeX") -> "\\TeX{}"
   | Spec("LaTeX") -> "\\LaTeX{}"
-  | Spec(s) -> s
+  | Spec(s) -> (esc s)
 
 let trans_ils = catmap trans_il
 

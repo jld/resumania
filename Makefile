@@ -2,7 +2,7 @@
 %.gen: generator.cma %.cmo 
 	ocamlc $(OCFLAGS) -o $@ $+
 
-generator.cma: latex.cmo nroff.cmo html.cmo rtf.cmo main.cmo
+generator.cma: rutil.cmo latex.cmo nroff.cmo html.cmo rtf.cmo main.cmo
 	ocamlc $(OCFLAGS) -a -o $@ $+
 
 %.cmo: %.ml

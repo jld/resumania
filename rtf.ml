@@ -1,5 +1,9 @@
 open Rtype;;
 
+let esc = Rutil.escape ['{',"\\{";
+			'}',"\\}";
+			'\\',"\\\\"] (* Is that all of them? *)
+			  
 let catmap fn li = String.concat "" (List.map fn li)
 
 let fscmd ns =
@@ -29,14 +33,14 @@ let preamble = "{\\rtf1\\ansi\
 and postamble = "}\n"
 
 let rec trans_il = function
-    Rm(s) -> s
-  | Bf(s) -> "{\\b "^s^"}"
-  | It(s) -> "{\\i "^s^"}"
-  | Sc(s) -> "{\\scaps "^s^"}"
-  | Tt(s) -> "{\\f1 "^s^"}"
-  | Spec("TeX") -> "{\\expnd-4 T}{\\fs18\\sub E}X"
-  | Spec("LaTeX") -> "{\\expnd-6 L}{\\fs18\\super A}"^(trans_il (Spec"TeX"))
-  | Spec(s) -> s
+    Rm(s) -> (esc s)
+  | Bf(s) -> "{\\b "^(esc s)^"}"
+  | It(s) -> "{\\i "^(esc s)^"}"
+  | Sc(s) -> "{\\scaps "^(esc s)^"}"
+  | Tt(s) -> "{\\f1 "^(esc s)^"}"
+  | Spec("TeX") -> "{\\expnd-4 T}{\\sub E}X"
+  | Spec("LaTeX") -> "{\\expnd-6 L}{\\fs20\\super A}"^(trans_il (Spec"TeX"))
+  | Spec(s) -> (esc s)
 
 let trans_ils = catmap trans_il
 
@@ -48,7 +52,7 @@ let rec trans_blk lvl = function
   | Subsect(il) -> "{"^(vskip 16)^(fscmd 1)^"\\b "^(trans_ils il)^"\\par}\n"
   | Subsubs(il) -> "{"^(vskip 8)^(fscmd 0)^"\\b "^(trans_ils il)^"\\par}\n"
   | Title(n, il) -> "{"^(fscmd n)^"\\qc "^(trans_ils il)^"\\par}\n"
-  | Itemize(bll) -> (catmap (function bl ->
+  | Itemize(bll) -> (vskip 4)^(catmap (function bl ->
       (vskip 4)^match (List.map (trans_blk (lvl+1)) bl) with
 	fst::lst -> Printf.sprintf "{\\li%d%s}\n" (lvl*itemgap)
 	    (String.concat "" (("{\\fi-240{\\b\149}\t"^fst^"}")::lst))

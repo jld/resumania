@@ -1,5 +1,8 @@
 open Rtype;;
 
+let esc = Rutil.escape ['.',"\\&.";
+			'\\',"\\\\"]
+    
 let catmap fn li = String.concat "" (List.map fn li)
 
 let preamble = ".na\n.nh\n"
@@ -8,9 +11,9 @@ and postamble = ".pl \\n(nlu\n"
 let dotesc s = match s.[0] with '.' -> "\\&"^s | _ -> s
 
 let rec trans_il = function
-    Rm(s) -> ".ft R\n"^(dotesc s)^"\\c\n"
-  | Bf(s) -> ".ft B\n"^(dotesc s)^"\\c\n"
-  | It(s) -> ".ft I\n"^(dotesc s)^"\\c\n"
+    Rm(s) -> ".ft R\n"^(esc s)^"\\c\n"
+  | Bf(s) -> ".ft B\n"^(esc s)^"\\c\n"
+  | It(s) -> ".ft I\n"^(esc s)^"\\c\n"
   | Sc(s) -> trans_il (Rm s)
   | Tt(s) -> trans_il (Rm s)
   | Spec(s) -> trans_il (Rm s)
