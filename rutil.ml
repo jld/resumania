@@ -14,3 +14,5 @@ let escape etab str =
   let buf = Buffer.create ((String.length str)*11/10) in
   iescape etab str buf 0 (String.length str);
   Buffer.contents buf
+
+let rec strx str n = if (n<=0) then "" else str^(strx str (pred n))

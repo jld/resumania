@@ -55,8 +55,9 @@ let rec trans_blk lvl = function
   | Itemize(bll) -> (vskip 4)^(catmap (function bl ->
       (vskip 4)^match (List.map (trans_blk (lvl+1)) bl) with
 	fst::lst -> Printf.sprintf "{\\li%d%s}\n" (lvl*itemgap)
-	    (String.concat "" (("{\\fi-240{\\b\149}\t"^fst^"}")::lst))
+	    (String.concat "" (("{\\fi-240{\\b\\'95}\t"^fst^"}")::lst))
       | _ -> "") bll)  (* TODO: test this with nesting and stuff *)
+  | Vskip(ln) -> vskip (int_of_float(24.*.ln))
 and trans_bls lvl x = catmap (trans_blk lvl) x (*sigh*)
 
 

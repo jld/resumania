@@ -54,6 +54,8 @@ let rec trans_blki = function
 	hno (trans_ils il) hno
   | Itemize(bll) -> entag ~attr:"compact" "UL" 
 	(catmap (function bl -> entag "LI" (trans_bls bl)) bll)
+  | Vskip(ln) -> entag "div" ~attr:(Printf.sprintf "style='height:%gem'" ln) 
+	(Rutil.strx "<br>" (int_of_float ln))
 and trans_blk = function x -> (trans_blki x)^"\n"
 and trans_bls = function x -> catmap trans_blk x (*sigh*)
 

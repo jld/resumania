@@ -64,6 +64,7 @@ let rec trans_blk = function
   | Itemize(bll) -> "\\begin{itemize}\n"^
       (catmap (function bl -> "\\myitem "^(trans_bls bl)) bll)^"\\end{itemize}\\vspace{-2ex}\n"
   | Title(n,il) -> "{\\"^(ntosize n)^"\\centerize{}"^(trans_ils il)^"\\par}\n"
+  | Vskip(ln) -> Printf.sprintf "\\vspace{%gem}" ln
 and trans_bls = function x -> catmap trans_blk x (*sigh*)
 
 

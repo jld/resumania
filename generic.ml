@@ -5,20 +5,20 @@ Title(5,[Rm"Jedidiah L. Davis"]);
 Title(2,[Tt"<jldavis@cs.oberlin.edu>"]);
 Title(0,[Rm"[REDACTED], Oberlin OH, 44074; 440/[REDACTED] (current)"]);
 Title(0,[Rm"[REDACTED], Wynnewood, PA 19096; 610/[REDACTED] (permanent)"]);
-Title(1,[Bf"Objective: for computers to help people rather than hinder them"]);
+(*Title(1,[Bf"Objective: for computers to help people rather than hinder them"]);*)
 
 Section[Rm"Education"];
 Subsect[Rm"Oberlin College, Oberlin, OH"];
 Itemize[
 [Par[Bf"Majors:";Rm" Computer Science (high honors), Mathematics; ";Bf"Minor:";Rm" Chemistry"]];
 [Par[Bf"B.A.";Rm" May 2003; ";Bf"GPA:";Rm" 3.80 (CS), 3.24 (overall); ";Bf"GRE/CS:";Rm" 880 (97th percentile)"]];
-[Par[Bf"Related Coursework:";Rm" Operating Systems, Computer Organization, Database Systems, Compilers, Computer Graphics, Data Structures and Algorithms (2 semesters), Theory of Computer Science, Group Theory, Linear Algebra, Number Theory, Discrete Mathematics, Multivariable Calculus, Probability, Computer Science Honors"]]; (* HONEME: prune? *)
+[Par[Bf"Related Coursework:";Rm" Operating Systems, Computer Organization, Database Systems, Compilers, Computer Graphics, Data Structures and Algorithms (2 semesters), Theory of Computer Science, Group Theory, Linear Algebra, Number Theory, Discrete Mathematics, Multivariable Calculus, Probability, Computer Science Honors"]]; (* prune? *)
 ];
 
 Section[Rm"Computer Skills"];
 Itemize[
 [Par[Bf"Systems:";Rm" Linux, Mac OS X, NetBSD, Solaris, DEC Tru64; Classic MacOS"]];
-[Par[Bf"Languages:";Rm" ";Tt"sh";Rm", ";Tt"sed";Rm", AWK, ";Tt"m4";Rm", Tcl (Expect), Perl; C, C++, Objective-C (gcc, gdb); Scheme, OCaml; AppleScript; ";Spec"TeX";Rm", ";Spec"LaTeX";Rm", ";Tt"troff";Rm", XML, XSLT, HTML; FORTH; Java; SQL"]];
+[Par[Bf"Languages:";Rm" ";Tt"sh";Rm", ";Tt"sed";Rm", AWK, ";Tt"m4";Rm", Tcl (Expect), Perl; C, C++, Objective-C (gcc, gdb); Scheme, OCaml; AppleScript; ";Spec"TeX";Rm", ";Spec"LaTeX";Rm", ";Tt"troff";Rm", XML, XSLT, HTML; FORTH; Java; SQL (PostgreSQL)"]];
 [Par[Bf"Miscellany:";Rm" OpenGL, Sockets, POSIX, STL (C++ Standard Library), lex/yacc, DNS"]] (* more? *)
 (* General? * Ability to quickly absorb new concepts/technologies *)
 ];
@@ -33,7 +33,7 @@ Itemize[
 [Par[Rm"Assisted in migrating to the program's new main Unix server, a Sun, from its DEC Alpha predecessor"]];
 [Par[Rm"Took primary responsibility for the program's systems after supervisor's departure in March 2003"]];
 [Par[Rm"Designed and wrote a backup system to take better advantage of the program's tape changer"]]
-(* TODO: TopCoder contract work? *)
+(* MAYBE: TopCoder contract work? *)
 ];
 
 Section[Rm"Awards"];
@@ -56,5 +56,9 @@ Itemize[
 [Par[Rm"A group of students who install and maintain miscellaneous software and locally-written tools, separately from but in cooperation with the system administrator."]]
 ];
 
-(* HONEME: references-on-demand, maybe an indication of random personal interests? *)
+(* PERHAPS: a random-personal-interest thing? *)
+
+Vskip 1.5;
+Title(0,[It"References available upon request"])
+
 ]

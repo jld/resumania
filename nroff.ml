@@ -33,6 +33,7 @@ let rec trans_blk = function
   | Title(n,il) -> ".ad c\n"^(trans_ils il)^".br\n.na\n"
   | Itemize(bll) -> ".in +2\n"^(catmap begin function bl ->
       ".ti -2\n\\fR*\n"^(trans_bls bl) end bll)
+  | Vskip(ln) -> Rutil.strx "\n" (int_of_float ln)
 and trans_bls = function x -> catmap trans_blk x (*sigh*)
 
 let xlate bl = preamble^(trans_bls bl)^postamble

@@ -15,5 +15,6 @@ type block =
   | Subsubs of ilst
   | Itemize of block list list
   | Title of int*ilst
+  | Vskip of float
 
 type xlator = block list -> string
