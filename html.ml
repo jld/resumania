@@ -6,8 +6,7 @@ let esc = Rutil.escape ['<',"&lt;";
 
 let catmap fn li = String.concat "" (List.map fn li)
 
-let preamble = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n\
-    <HTML>\n<HEAD>\n\
+let preamble = "<HTML>\n<HEAD>
     <style type='text/css'><!--\n\
     .head { text-align: center; margin: 0; font-weight: normal }\n\
     .foo { font-family: 'Lucida Grande', sans-serif; font-size: 12pt }\n\
