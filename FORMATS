@@ -1,0 +1,27 @@
+       _ Resume Format Derivation Tree _
+       #===============================#
+
+  +-*.pdf ---- Adobe Portable Document Format
+  |
+  | +-*.ps --- Adobe PostScript
+  | |
+  +-*.dvi ---- TeX Device Independent Output
+  |
++-*.tex ------ LaTeX source; uses the "geometry" package
+|
+|   +-*.txt -- Plain text with Unix-style (ASCII LF) line breaks
+|   |
+|   +-*.ansi - Text with ANSI terminal codes for text styles
+|   |
+| +-*.tty ---- Text with typewriter-style (backspace) text styling
+| |
++-*.nr ------- nroff source; uses no external macros
+|
++-*.html ----- HTML 4.01 Transitional with CSS
+|
++-*.rtf ------ Microsoft Rich Text Format
+|
+|
+*.ml --------- OCaml source file; depends on backend code that
+               will be released once it's been properly documented
+
