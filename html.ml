@@ -23,7 +23,7 @@ let preamble = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"
     sup.tex { font-size: .8em; margin-left: -.36em; \
               margin-right: -.15em; vertical-align: .25em }\n\
     --></style>\n\
-    </HEAD>\n<BODY>\n"
+    </HEAD>\n<BODY>\n" (* unconfuse emacs: '"' *)
 and postamble = "</BODY>\n</HTML>\n"
 
 let entag tag ?(attr) payload = 
