@@ -19,11 +19,11 @@ let drive stem bl =
 
   if syspr("latex "^stem) then begin
     isyspr("dvips "^stem^" -o");
- (* isyspr("pdflatex "^stem) *)
+    (* isyspr("pdflatex "^stem) *)
     isyspr("dvipdfm -v "^stem)
   end;
 
-  if syspr("nroff "^stem^".nr > "^stem^".tty") then begin
+  if syspr("nroff -c "^stem^".nr > "^stem^".tty") then begin
     isyspr("ul -t ansi "^stem^".tty > "^stem^".ansi");
     isyspr("ul -t dumb "^stem^".tty > "^stem^".txt");
   end
