@@ -26,7 +26,7 @@ Section[Rm"Work History"];
 
 (* TODO: compact the two NEU assistantships *)
 Subsect[Rm"Graduate Teaching Assistant"];
-Par[Bf"Northeastern University";Rm", January 2009 - present"];
+Par[Bf"Northeastern University";Rm", January 2009 - May 2010"];
 Itemize[
 [Par[Rm"Graded programming homework assignments and developed related testing tools"]];
 [Par[Rm"Wrote and managed homework submission software"]];
