@@ -24,6 +24,23 @@ Itemize[
 
 Section[Rm"Work History"];
 
+Subsect[Rm"Member of Technical Staff"];
+(* What's the best way to indicate organizational unit? *)
+Par[Bf"VMware";Rm", vSphere (ESXi) Kernel Core Team, May 2010 - present"];
+Itemize[
+[Par[Rm"Maintained subsystems ranging from ";
+     Rm"memory allocation to filesystem implementation to error reporting"]];
+(* "owned by other groups" is a bit blunt; can it be made more flowery in space avail.? *)
+[Par[Rm"Improved filesystem and memory management infrastructure owned by other groups"]];
+[Par[Rm"Debugged and fixed a variety of code, kernel and userlevel, ";
+     Rm"as part of rotating bug triage duties"]]; (* <- phrasing? *)
+(* Can I allude to the #kernelworldproblems caused by a compiler change? *)
+[Par[Rm"Upgraded the kernel build to a newer C compiler, ";
+     Rm"modifying the compiler to make this possible"]];
+[Par[Rm"Implemented a system for kernel-specialized low-overhead detection of ";
+     Rm"a class of memory usage errors"]]
+];
+
 Subsect[Rm"Graduate Teaching Assistant and Research Assistant"];
 Par[Bf"Northeastern University";Rm", January 2008 - May 2010"];
 (* FIXME: this section sucks now. *)
