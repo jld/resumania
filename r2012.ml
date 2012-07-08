@@ -64,16 +64,23 @@ Itemize[
 
 Section[Rm"Skills"];
 Itemize[
-[Par[Bf"Programming Languages:";Rm" C, C++, OCaml, Scheme, Erlang, Perl, Common Lisp, Forth, Java, ";Tt"sh";Rm"/";Tt"sed";Rm"/";Rm"AWK, ";Tt"m4";Rm", i386 assembly, ";Spec"TeX";Rm"/";Spec"LaTeX"]];
+[Par[Bf"Programming Languages:";Rm" C, C++, OCaml, x86 assembly (i386, x86_64), Python, Perl, Forth, Scheme, Erlang, ";Tt"sh";Rm"/";Tt"sed";Rm"/";Rm"AWK, ";Tt"m4";Rm", ";Spec"TeX";Rm"/";Spec"LaTeX"]];
 (* What else? *)
+
+(*
+1: C, asm, OCaml, Forth, Perl, sh/sed/awk, Scheme
+2: Erlang, C++, TeX/LaTeX, m4, Python
+3: Ruby, ?Java, ?CL, Coq
+*)
 
 (* FIXME: This section needs to be refactored; I'm just not sure how. *)
 ];
 
 Section[Rm"Miscellaneous"];
 Itemize[
-[Par[Rm"NetBSD Developer (full commit access), 2005 - 2012"]];
-[Par[Rm"Judges' Prize and 3rd place, ICFP Programming Competition, 2007 (as team of one)"]]
+[Par[Rm"Judges' Prize and 3rd place, ICFP Programming Competition, 2007 (as team of one)"]];
+(* Lost the 2012 IOCCC. *)
+[Par[Rm"NetBSD Developer (full commit access), 2005 - 2012"]]
 (* What else? *)
 ];
 
