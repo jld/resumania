@@ -26,29 +26,29 @@ Section[Rm"Work History"];
 
 Subsect[Rm"Member of Technical Staff"];
 (* What's the best way to indicate organizational unit? *)
-Par[Bf"VMware";Rm", vSphere (ESXi) Kernel Core Team, May 2010 - present"];
+Par[Bf"VMware, vSphere (ESXi) Kernel Core Team";Rm", May 2010 - present"];
 Itemize[
 [Par[Rm"Maintained subsystems ranging from ";
      Rm"memory allocation to filesystem implementation to error reporting"]];
-(* "owned by other groups" is a bit blunt; can it be made more flowery in space avail.? *)
 [Par[Rm"Improved filesystem and memory management infrastructure owned by other groups"]];
+(* "owned by other groups" is a bit blunt; can it be made more flowery in space avail.? *)
 [Par[Rm"Debugged and fixed a variety of code, kernel and userlevel, ";
      Rm"as part of rotating bug triage duties"]]; (* <- phrasing? *)
-(* Can I allude to the #kernelworldproblems caused by a compiler change? *)
 [Par[Rm"Upgraded the kernel build to a newer C compiler, ";
      Rm"modifying the compiler to make this possible"]];
+(* Can I allude to the #kernelworldproblems caused by a compiler change? *)
 [Par[Rm"Implemented a system for kernel-specialized low-overhead detection of ";
      Rm"a class of memory usage errors"]]
 ];
 
 Subsect[Rm"Graduate Teaching Assistant and Research Assistant"];
 Par[Bf"Northeastern University";Rm", January 2008 - May 2010"];
-(* FIXME: this section sucks now. *)
+(* This section is still a little... unfortunate, but then so was grad school. *)
 Itemize[
-[Par[Rm"Graded programming homework assignments and developed related testing tools"]];
-[Par[Rm"Wrote and managed homework submission software"]];
+[Par[Rm"Explored potential applications of NAND flash memory to transparent persistence ";
+     Rm"in garbage-collected managed runtime environments."]];
+[Par[Rm"Wrote and managed homework submission software, graded assignments, and developed testing tools"]];
 [Par[Rm"Led and oversaw laboratory exercises" (* fixme: make this longer and less bad *)]];
-(* I'd like to mention the "not research" I did, because it's more relevant, but.... *)
 [Par[Rm"Investigated novel applications and combinations of verification techniques"]];
 [Par[Rm"Assisted with reviewing papers for conferences"]]
 ];
@@ -69,8 +69,8 @@ Itemize[
 [Par[Rm"Modified and extended a large existing codebase to the needs of a managed server product"]];
  (* That means GCS; can it sound more epic? *)
 [Par[Rm"Installed and upgraded software for internal and customer use, under an in-house package system"]];
-(* fixme: convey that I compiled it with stone knives and bearskins *)
-[Par[Rm"Redesigned backup system to increase retention and decrease administrative overhead"]];
+ (* fixme: convey that I compiled it with stone knives and bearskins *)
+(*[Par[Rm"Redesigned backup system to increase retention and decrease administrative overhead"]];*)
 [Par[Rm"Gained primary responsibility for email system; significantly improved its performance"]];
 [Par[Rm"Analyzed and corrected defects in the NetBSD kernel, including Xen paravirtual drivers"]];
  (* Can this be worded better? Can/ought it be two points? *)
