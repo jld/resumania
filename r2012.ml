@@ -81,23 +81,22 @@ Itemize[
 
 Section[Rm"Skills"];
 Itemize[
-[Par[Bf"Programming Languages:";Rm" C, C++, OCaml, x86 assembly (i386, x86_64), Python, Perl, Forth, Scheme, Erlang, ";Tt"sh";Rm"/";Tt"sed";Rm"/";Rm"AWK, ";Tt"m4";Rm", ";Spec"TeX";Rm"/";Spec"LaTeX"]];
-(* What else? *)
-
-(*
-1: C, asm, OCaml, Forth, Perl, sh/sed/awk, Scheme
-2: Erlang, C++, TeX/LaTeX, m4, Python
-3: Ruby, ?Java, ?CL, Coq
-*)
-
-(* FIXME: This section needs to be refactored; I'm just not sure how. *)
+[Par[Bf"Programming Languages: ";
+     Rm"C, C++, Coq, Erlang, Forth, Java, ";Tt"m4";Rm", OCaml, Perl, Python, Ruby, Scheme, ";
+     Tt"sh";Rm"/";Tt"sed";Rm"/";Rm"AWK; ";Spec"TeX";Rm"/";Spec"LaTeX";
+     Rm", x86 assembly (i386, x86_64)"]];
+[Par[Bf"Operating Systems: ";
+     Rm"Linux (Debian), NetBSD, VMware ESXi"]];
+[Par[Bf"Revision Control: ";
+     Rm"CVS, Git, Mercurial, Perforce, Subversion"]]
+(* Still not sure this section is all it can be.... *)
 ];
 
 Section[Rm"Miscellaneous"];
 Itemize[
 [Par[Rm"Judges' Prize and 3rd place, ICFP Programming Competition, 2007 (as team of one)"]];
-(* Lost the 2012 IOCCC. *)
-[Par[Rm"NetBSD Developer (full commit access), 2005 - 2012"]]
+[Par[Rm"NetBSD Developer (full commit access), 2005 - 2012"]];
+[Par[Rm"Lost the 20th International Obfuscated C Code Competition"]]
 (* What else? *)
 ];
 
