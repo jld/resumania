@@ -6,21 +6,6 @@ Title(2,[Tt"<jld@panix.com>"]);
 Title(0,[Rm"3459 16th St. #2, San Francisco, CA; 857-389-3671"]);
 (*Title(1,[Bf"Objective: goes here, if desired"]);*)
 
-(* FIXME 2012: Could drop this below the work history.... *)
-Section[Rm"Education"];
-(* Is this how I want to format this? *)
-Subsect[Rm"Northeastern University, Boston, MA"];
-Itemize[
-[Par[Bf"M.S.";Rm", Computer Science, 2010"]];
-(* FIXME: explain that it was a consolation master's and I was trying to do research.
-   Somehow.*)
-];
-Subsect[Rm"Oberlin College, Oberlin, OH"];
-Itemize[
-[Par[Bf"B.A.";Rm", Computer Science (high honors) and Mathematics, 2003"]];
-(* Does anyone still care about my GRE scores? *)
-[Par[Rm"Honors project: composable object-orientation for agent-based modelling"]]
-];
 
 Section[Rm"Work History"];
 
@@ -61,7 +46,6 @@ Itemize[
 [Par[Rm"Had work accepted for inclusion in the next major and minor releases"]]
 ];
 
-
 Subsect[Rm"Systems Programmer / System Administrator"];
 Par[Bf"Public Access Networks Corp. (Panix)";Rm", February 2004 - December 2006"];
 Itemize[
@@ -78,6 +62,23 @@ Itemize[
 [Par[Rm"Had 24-hour on-call responsibilities, both rotating and permanent"]]
 (* include: asst'd infrastructure (conserver, libcheck, ...), ??? *)
 ];
+
+
+Section[Rm"Education"];
+(* Is this how I want to format this? *)
+Subsect[Rm"Northeastern University, Boston, MA"];
+Itemize[
+[Par[Bf"M.S.";Rm", Computer Science, 2010"]];
+(* FIXME: explain that it was a consolation master's and I was trying to do research.
+   Somehow.*)
+];
+Subsect[Rm"Oberlin College, Oberlin, OH"];
+Itemize[
+[Par[Bf"B.A.";Rm", Computer Science (high honors) and Mathematics, 2003"]];
+(* Does anyone still care about my GRE scores? *)
+[Par[Rm"Honors project: composable object-orientation for agent-based modelling"]]
+];
+
 
 Section[Rm"Skills"];
 Itemize[
