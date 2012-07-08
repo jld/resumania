@@ -24,13 +24,16 @@ Itemize[
 
 Section[Rm"Work History"];
 
-(* TODO: compact the two NEU assistantships *)
-Subsect[Rm"Graduate Teaching Assistant"];
-Par[Bf"Northeastern University";Rm", January 2009 - May 2010"];
+Subsect[Rm"Graduate Teaching Assistant and Research Assistant"];
+Par[Bf"Northeastern University";Rm", January 2008 - May 2010"];
+(* FIXME: this section sucks now. *)
 Itemize[
 [Par[Rm"Graded programming homework assignments and developed related testing tools"]];
 [Par[Rm"Wrote and managed homework submission software"]];
-[Par[Rm"Led and oversaw laboratory exercises" (* fixme: make this longer and less bad *)]]
+[Par[Rm"Led and oversaw laboratory exercises" (* fixme: make this longer and less bad *)]];
+(* I'd like to mention the "not research" I did, because it's more relevant, but.... *)
+[Par[Rm"Investigated novel applications and combinations of verification techniques"]];
+[Par[Rm"Assisted with reviewing papers for conferences"]]
 ];
 
 Subsect[Rm"Student Developer"(* ??? *)];
@@ -39,15 +42,6 @@ Itemize[
 (* "fault tolerance" may not be the term I want here? *)
 [Par[Rm"Extended NetBSD's software RAID driver to improve fault tolerance"]];
 [Par[Rm"Had work accepted for inclusion in the next major and minor releases"]]
-];
-
-Subsect[Rm"Graduate Research Assistant"];
-Par[Bf"Northeastern University";Rm", January 2008 - December 2008"];
-Itemize[
-[Par[Rm"Worked with Panagiotis Manolios on formal verification methods"]];
-[Par[Rm"Investigated novel applications and combinations of verification techniques"]];
-[Par[Rm"Assisted with reviewing papers for conferences"]]
-(* suggest that I'd bootstrapped myself into an unknown field *)
 ];
 
 
