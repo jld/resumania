@@ -49,22 +49,18 @@ Subsect[Rm"Systems Programmer / System Administrator"];
 Par[Bf"Public Access Networks Corp. (Panix)";Rm", February 2004 - December 2006"];
 Itemize[
  (* *All* of this needs hit with a stick. *)
-[Par[Rm"Modified and extended a large existing codebase to the needs of a managed server product"]]; (* That means GCS; can it sound more epic? *)
-
-[Par[Rm"Installed and upgraded software for internal and customer use, under an in-house package system"]]; (* fixme: convey that I compiled it with stone knives and bearskins *)
-
+[Par[Rm"Modified and extended a large existing codebase to the needs of a managed server product"]];
+ (* That means GCS; can it sound more epic? *)
+[Par[Rm"Installed and upgraded software for internal and customer use, under an in-house package system"]];
+(* fixme: convey that I compiled it with stone knives and bearskins *)
 [Par[Rm"Redesigned backup system to increase retention and decrease administrative overhead"]];
-
 [Par[Rm"Gained primary responsibility for email system; significantly improved its performance"]];
-
-[Par[Rm"Analyzed and corrected defects in the NetBSD kernel, including Xen paravirtual drivers"]]; (* Can this be worded better? Can/ought it be two points? *)
+[Par[Rm"Analyzed and corrected defects in the NetBSD kernel, including Xen paravirtual drivers"]];
+ (* Can this be worded better? Can/ought it be two points? *)
 (*[Par[Rm"Rewrote the NetBSD/xen paravirtual clock driver and disk backend"]] *)
-
 [Par[Rm"Had 24-hour on-call responsibilities, both rotating and permanent"]]
-
 (* include: asst'd infrastructure (conserver, libcheck, ...), ??? *)
 ];
-
 
 Section[Rm"Skills"];
 Itemize[
