@@ -8,6 +8,8 @@ let esc = Rutil.escape ['{',"\\{";
 			'$',"\\$";
 			'<',"$<$";
 			'>',"$>$";
+			'_',"\\_";
+			'^',"\\^{}";
 			'\\',"$\\backslash$"]
 
 let catmap fn li = String.concat "" (List.map fn li)
