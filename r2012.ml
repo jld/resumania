@@ -33,6 +33,7 @@ Itemize[
 [Par[Rm"Explored potential applications of NAND flash memory to transparent persistence ";
      Rm"in garbage-collected managed runtime environments."]];
 [Par[Rm"Wrote and managed homework submission software, graded assignments, and developed testing tools"]];
+(* Should that be multiple points? Not worth burning vspace on, but reads oddly. *)
 [Par[Rm"Led and oversaw laboratory exercises" (* fixme: make this longer and less bad *)]];
 [Par[Rm"Investigated novel applications and combinations of verification techniques"]];
 [Par[Rm"Assisted with reviewing papers for conferences"]]
@@ -57,8 +58,6 @@ Itemize[
 (*[Par[Rm"Redesigned backup system to increase retention and decrease administrative overhead"]];*)
 [Par[Rm"Gained primary responsibility for email system; significantly improved its performance"]];
 [Par[Rm"Analyzed and corrected defects in the NetBSD kernel, including Xen paravirtual drivers"]];
- (* Can this be worded better? Can/ought it be two points? *)
-(*[Par[Rm"Rewrote the NetBSD/xen paravirtual clock driver and disk backend"]] *)
 [Par[Rm"Had 24-hour on-call responsibilities, both rotating and permanent"]]
 (* include: asst'd infrastructure (conserver, libcheck, ...), ??? *)
 ];
@@ -70,7 +69,7 @@ Subsect[Rm"Northeastern University, Boston, MA"];
 Itemize[
 [Par[Bf"M.S.";Rm", Computer Science, 2010"]];
 (* FIXME: explain that it was a consolation master's and I was trying to do research.
-   Somehow.*)
+   And make that sound like a good thing. *)
 ];
 Subsect[Rm"Oberlin College, Oberlin, OH"];
 Itemize[
@@ -83,7 +82,7 @@ Itemize[
 Section[Rm"Skills"];
 Itemize[
 [Par[Bf"Programming Languages: ";
-     Rm"C, C++, Coq, Erlang, Forth, Java, ";Tt"m4";Rm", OCaml, Perl, Python, Ruby, Scheme, ";
+     Rm"C, C++, Coq, Erlang, Forth, Java, ";Tt"m4";Rm", OCaml, Perl, Python, Rust, Scheme, ";
      Tt"sh";Rm"/";Tt"sed";Rm"/";Rm"AWK; ";Spec"TeX";Rm"/";Spec"LaTeX";
      Rm", x86 assembly (i386, x86_64)"]];
 [Par[Bf"Operating Systems: ";
