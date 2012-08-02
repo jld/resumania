@@ -43,7 +43,7 @@ Par[Bf"Google Summer of Code";Rm", May 2009 - August 2009"];
 Itemize[
 (* "fault tolerance" may not be the term I want here? *)
 [Par[Rm"Extended NetBSD's software RAID driver to improve fault tolerance"]];
-[Par[Rm"Had work accepted for inclusion in the next major and minor releases"]]
+[Par[Rm"Had work accepted for inclusion in the next major and minor NetBSD releases"]]
 ];
 
 Subsect[Rm"Systems Programmer / System Administrator"];
