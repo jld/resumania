@@ -18,6 +18,7 @@ let drive stem bl =
   filewrite (stem^".rtf") (Rtf.xlate bl);
 
   if syspr("latex "^stem) then begin
+    isyspr("rm -f "^stem^".aux "^stem^".log");
     isyspr("dvips "^stem^" -o");
     (* isyspr("pdflatex "^stem) *)
     isyspr("dvipdfm -v "^stem)
