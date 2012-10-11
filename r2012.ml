@@ -1,3 +1,9 @@
+(*
+ * Copyright (c) 2003-2012 Jed Davis <jld@panix.com>
+ * 
+ * All rights reserved.
+ *)
+
 open Rtype;;
 
 Main.drive "jld" [

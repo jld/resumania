@@ -1,3 +1,9 @@
+(*
+ * Copyright (c) 2003 Jed Davis <jld@panix.com>
+ * 
+ * All rights reserved.
+ *)
+
 open Rtype;;
 
 Main.drive "stdres" [
