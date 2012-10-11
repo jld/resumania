@@ -1,0 +1,17 @@
+This is the résumé formatter I wrote when I was graduating from college
+in 2003, and dusted off whenever I've needed to apply for jobs since
+then.  It also has the source code for my actual résumé (complete with
+asides and notes-to-self in comments) and a few historical versions --
+as usage examples if anyone felt like trying to actually use this thing,
+and as part of publishing my résumé for the usual reasons one does that.
+
+The revision history for this repo is a little odd; it was originally
+maintained in CVS (at a time in my life when, apparently, I didn't even
+try to keep multiple functional changes in separate commits), and then
+"versioned" by copy-and-edit on the resume source on the infrequent
+occasions after my first job when I needed to touch it.
+
+It was probably part of a larger scheme to generate the low-level
+formatting seen here from a high-level declarative description, but in
+practice the only problem that proved worth solving was that of having
+the same document in multiple markup formats, which this accomplished.
