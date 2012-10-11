@@ -3,7 +3,7 @@ set -e -u
 SRC=r2012
 DST=jld
 set -x
-git branch -D redacted
+git branch -D redacted || true
 git branch redacted master
 git filter-branch --force --tree-filter "$(pwd)/redact-tree.sh" redacted
 git checkout redacted
