@@ -9,7 +9,7 @@ open Rtype;;
 Main.drive "jld" [
 Title(5,[Rm"Jed Davis"]);
 Title(2,[Tt"<jld@panix.com>"]);
-Title(0,[Rm"3459 16th St. #2, San Francisco, CA 94114; 857-389-3671"]);
+Title(0,[Rm"3459 16th St. #2, San Francisco, CA 94114; 617-[REDACTED]"]);
 (*Title(1,[Bf"Objective: goes here, if desired"]);*)
 
 
