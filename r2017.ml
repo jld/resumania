@@ -1,5 +1,5 @@
 (*
- * Copyright (c) 2003-2012 Jed Davis <jld@panix.com>
+ * Copyright (c) 2003-2017 Jed Davis <jld@xlerb.net>
  * 
  * All rights reserved.
  *)
@@ -8,8 +8,8 @@ open Rtype;;
 
 Main.drive "jld" [
 Title(5,[Rm"Jed Davis"]);
-Title(2,[Tt"<jld@panix.com>"]);
-Title(0,[Rm"3459 16th St. #2, San Francisco, CA 94114; 857-389-3671"]);
+Title(2,[Tt"<jld@xlerb.net>"]);
+Title(0,[Rm"2000 Walnut St. #215, Boulder, CO 80302; 415-845-4647"]);
 (*Title(1,[Bf"Objective: goes here, if desired"]);*)
 
 
