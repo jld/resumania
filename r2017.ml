@@ -15,9 +15,23 @@ Title(0,[Rm"2000 Walnut St. #215, Boulder, CO 80302; 415-845-4647"]);
 
 Section[Rm"Work History"];
 
+Subsect[Rm"Software Engineer"];
+(* That title seems dull, but I'm not putting "Bit Herder" on my formal resume. *)
+Par[Bf"Mozilla Corporation";Rm", February 2013 - present"];
+Itemize[
+(* Should I just name Firefox/Gecko/FxOS instead of being generic? *)
+[Par[Rm"Designed and implemented system-level security sandboxing technology for a Web renderer"]];
+[Par[Rm"Refactored legacy code for asynchrony and process separation"]];
+[Par[Rm"Developed tools to investigate system-level performance on a novel mobile OS"]]
+(* Some recognition of the NSS work would be nice, but hard to summarize *)
+(* Also this could surely be made to sound more impressive (cf. the older jobs) *)
+];
+
+(* FIXME17: make sure the months are correct before sending this anywhere *)
+
 Subsect[Rm"Member of Technical Staff"];
 (* What's the best way to indicate organizational unit? *)
-Par[Bf"VMware, vSphere (ESXi) Kernel Core Team";Rm", May 2010 - present"];
+Par[Bf"VMware, vSphere (ESXi) Kernel Core Team";Rm", May 2010 - January 2013"];
 Itemize[
 [Par[Rm"Maintained subsystems ranging from ";
      Rm"memory allocation to filesystem implementation to error reporting"]];
@@ -31,6 +45,11 @@ Itemize[
 [Par[Rm"Implemented a system for kernel-specialized low-overhead detection of ";
      Rm"a class of memory usage errors"]]
 ];
+
+(* FIXME17: take a chainsaw to the rest of this.  Consider merging it all
+into a "Previously" section somehow.  Especially consider removing
+anything that's long enough ago that I couldn't explain it coherently
+in an interview.  And expanding vagueness like "improve fault tolerance" *)
 
 Subsect[Rm"Graduate Teaching Assistant and Research Assistant"];
 Par[Bf"Northeastern University";Rm", January 2008 - May 2010"];
@@ -88,18 +107,22 @@ Itemize[
 Section[Rm"Skills"];
 Itemize[
 [Par[Bf"Programming Languages: ";
+     (* FIXME17: lint this list. *)
      Rm"C, C++, Coq, Erlang, Forth, Java, ";Tt"m4";Rm", OCaml, Perl, Python, Rust, Scheme, ";
      Tt"sh";Rm"/";Tt"sed";Rm"/";Rm"AWK; ";Spec"TeX";Rm"/";Spec"LaTeX";
      Rm", x86 assembly (i386, x86_64)"]];
 [Par[Bf"Operating Systems: ";
+     (* FIXME17: lint this list, also I can cite FreeBSD. *)
      Rm"Linux (Debian), NetBSD, VMware ESXi"]];
 [Par[Bf"Revision Control: ";
+     (* FIXME17: reorder these. *)
      Rm"CVS, Git, Mercurial, Perforce, Subversion"]]
 (* Still not sure this section is all it can be.... *)
 ];
 
 Section[Rm"Miscellaneous"];
 Itemize[
+(* FIXME17: Rust. *)
 [Par[Rm"Judges' Prize and 3rd place, ICFP Programming Competition, 2007 (as team of one)"]];
 [Par[Rm"NetBSD Developer (full commit access), 2005 - 2012"]];
 [Par[Rm"Lost the 20th International Obfuscated C Code Competition"]]
