@@ -15,9 +15,9 @@ Title(0,[Rm"2000 Walnut St. #215, Boulder, CO 80302; 415-845-4647"]);
 
 Section[Rm"Work History"];
 
-Subsect[Rm"Software Engineer"];
+Subsect[Rm"Mozilla Corporation"];
+Par[Bf"Software Engineer";Rm", February 2013 - present"];
 (* That title seems dull, but I'm not putting "Bit Herder" on my formal resume. *)
-Par[Bf"Mozilla Corporation";Rm", February 2013 - present"];
 Itemize[
 (* Should I just name Firefox/Gecko/FxOS instead of being generic? *)
 (* Especially given that I name NetBSD elsewhere *)
@@ -28,9 +28,9 @@ Itemize[
 (* Also this could surely be made to sound more impressive (cf. the older jobs) *)
 ];
 
-Subsect[Rm"Member of Technical Staff"];
+Subsect[Rm"VMware, vSphere (ESXi) Kernel Core Team"];
 (* What's the best way to indicate organizational unit? *)
-Par[Bf"VMware, vSphere (ESXi) Kernel Core Team";Rm", May 2010 - January 2013"];
+Par[Bf"Member of Technical Staff";Rm", May 2010 - January 2013"];
 Itemize[
 [Par[Rm"Maintained subsystems ranging from ";
      Rm"memory allocation to filesystem implementation to error reporting"]];
