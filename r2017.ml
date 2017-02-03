@@ -23,7 +23,7 @@ Itemize[
 (* Especially given that I name NetBSD elsewhere *)
 [Par[Rm"Designed and implemented system-level security sandboxing technology for a Web renderer"]];
 [Par[Rm"Refactored legacy code for asynchrony and process separation"]];
-[Par[Rm"Developed tools to investigate system-level performance on a novel mobile OS"]]
+[Par[Rm"Developed tools to investigate system-level performance on a novel mobile OS"]];
 (* Some recognition of the NSS work would be nice, but hard to summarize *)
 (* Also this could surely be made to sound more impressive (cf. the older jobs) *)
 ];
@@ -42,7 +42,7 @@ Itemize[
      Rm"modifying the compiler to make this possible"]];
 (* Can I allude to the #kernelworldproblems caused by a compiler change? *)
 [Par[Rm"Implemented a system for kernel-specialized low-overhead detection of ";
-     Rm"a class of memory usage errors"]]
+     Rm"a class of memory usage errors"]];
 ];
 
 Subsect[Rm"Previously:"];
@@ -59,7 +59,7 @@ Itemize[
 
 (* ## Panix ## *)
 [Par[Rm"Had primary responsibility for a small ISP's email system; significantly improved its performance"]];
-[Par[Rm"Analyzed and corrected defects in the NetBSD kernel, including Xen paravirtual drivers"]]
+[Par[Rm"Analyzed and corrected defects in the NetBSD kernel, including Xen paravirtual drivers"]];
 ];
 
 Section[Rm"Education"];
@@ -74,7 +74,7 @@ Subsect[Rm"Oberlin College, Oberlin, OH"];
 Itemize[
 [Par[Bf"B.A.";Rm", Computer Science (high honors) and Mathematics, 2003"]];
 (* Does anyone still care about my GRE scores? *)
-[Par[Rm"Honors project: composable object-orientation for agent-based modelling"]]
+[Par[Rm"Honors project: composable object-orientation for agent-based modelling"]];
 ];
 
 Section[Rm"Skills"];
@@ -88,7 +88,7 @@ Itemize[
      (* FIXME17: continue linting this list? *)
      Rm"Linux (Debian), FreeBSD, NetBSD, VMware ESXi"]];
 [Par[Bf"Revision Control: ";
-     Rm"Git, Mercurial, Subversion, Perforce, CVS"]]
+     Rm"Git, Mercurial, Subversion, Perforce, CVS"]];
 (* Still not sure this section is all it can be.... *)
 (* Specifically, this reeks of being a holdover from when I was much younger. *)
 ];
@@ -98,12 +98,12 @@ Itemize[
 (* FIXME17: Rust. *)
 [Par[Rm"Judges' Prize and 3rd place, ICFP Programming Competition, 2007 (as team of one)"]];
 [Par[Rm"NetBSD Developer (full commit access), 2005 - 2012"]];
-[Par[Rm"Lost the 20th International Obfuscated C Code Competition"]]
+[Par[Rm"Lost the 20th International Obfuscated C Code Competition"]];
 (* What else? *)
 ];
 
 
 Vskip 1.5;
-Title(0,[It"References available upon request"])
+Title(0,[It"References available upon request"]);
 
 ];;
