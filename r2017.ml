@@ -58,7 +58,7 @@ Itemize[
 [Par[Rm"Improved crash recovery efficiency of NetBSD's software RAID driver"]];
 
 (* ## Panix ## *)
-[Par[Rm"Had primary responsibility for a small ISP's email system; significantly improved its performance"]];
+[Par[Rm"Gained primary responsibility for a small ISP's email system; significantly improved its performance"]];
 [Par[Rm"Analyzed and corrected defects in the NetBSD kernel, including Xen paravirtual drivers"]];
 ];
 
