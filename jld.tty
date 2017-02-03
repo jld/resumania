@@ -1,0 +1,58 @@
+                            Jed Davis
+                         <jld@xlerb.net>
+      2000 Walnut St. #215, Boulder, CO 80302; 415‐845‐4647
+
+WWoorrkk HHiissttoorryy
+ MMoozziillllaa CCoorrppoorraattiioonn
+  SSooffttwwaarree EEnnggiinneeeerr, February 2013 ‐ present
+  * Designed and implemented system‐level security sandboxing
+    technology for a Web renderer
+  * Refactored legacy code for asynchrony and process separation
+  * Developed tools to investigate system‐level performance on a
+    novel mobile OS
+ VVMMwwaarree,, vvSSpphheerree ((EESSXXii)) KKeerrnneell CCoorree TTeeaamm
+  MMeemmbbeerr ooff TTeecchhnniiccaall SSttaaffff, May 2010 ‐ January 2013
+  * Maintained subsystems ranging from memory allocation to
+    filesystem implementation to error reporting
+  * Improved filesystem and memory management infrastructure
+    owned by other groups
+  * Debugged and fixed a variety of code, kernel and userlevel,
+    as part of rotating bug triage duties
+  * Upgraded the kernel build to a newer C compiler, modifying
+    the compiler to make this possible
+  * Implemented a system for kernel‐specialized low‐overhead
+    detection of a class of memory usage errors
+ PPrreevviioouussllyy::
+  * Researched potential applications of NAND flash memory for
+    transparent persistence in garbage‐collected managed runtime
+    environments.
+  * Improved crash recovery efficiency of NetBSD’s software RAID
+    driver
+  * Gained primary responsibility for a small ISP’s email system;
+    significantly improved its performance
+  * Analyzed and corrected defects in the NetBSD kernel,
+    including Xen paravirtual drivers
+
+EEdduuccaattiioonn
+ NNoorrtthheeaasstteerrnn UUnniivveerrssiittyy,, BBoossttoonn,, MMAA
+  * MM..SS.., Computer Science, 2010
+ OObbeerrlliinn CCoolllleeggee,, OObbeerrlliinn,, OOHH
+  * BB..AA.., Computer Science (high honors) and Mathematics, 2003
+  * Honors project: composable object‐orientation for agent‐based
+    modelling
+
+SSkkiillllss
+ * PPrrooggrraammmmiinngg LLaanngguuaaggeess:: C, C++, Coq, Erlang, Forth, Haskell,
+   JavaScript, m4, OCaml, Perl, Python, Rust, Scheme, sh/sed/AWK;
+   TeX/LaTeX, x86 assembly (i386, x86_64)
+ * OOppeerraattiinngg SSyysstteemmss:: Linux (Debian), FreeBSD, NetBSD, VMware
+   ESXi
+ * RReevviissiioonn CCoonnttrrooll:: Git, Mercurial, Subversion, Perforce, CVS
+
+MMiisscceellllaanneeoouuss
+ * Judges’ Prize and 3rd place, ICFP Programming Competition,
+   2007 (as team of one)
+ * Implemented the Rust language’s optional pointer optimization
+ * Lost the 20th International Obfuscated C Code Competition
+
+                 _R_e_f_e_r_e_n_c_e_s _a_v_a_i_l_a_b_l_e _u_p_o_n _r_e_q_u_e_s_t
