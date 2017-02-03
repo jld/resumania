@@ -51,7 +51,7 @@ Subsect[Rm"Previously:"];
 
 (* ## Grad school ## *)
 Itemize[
-[Par[Rm"Researched potential applications of NAND flash memory to transparent persistence ";
+[Par[Rm"Researched potential applications of NAND flash memory for transparent persistence ";
      Rm"in garbage-collected managed runtime environments."]];
 
 (* ## GSoC ## *)
