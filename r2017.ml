@@ -62,6 +62,7 @@ Itemize[
 [Par[Rm"Analyzed and corrected defects in the NetBSD kernel, including Xen paravirtual drivers"]];
 ];
 
+
 Section[Rm"Education"];
 (* Is this how I want to format this? *)
 Subsect[Rm"Northeastern University, Boston, MA"];
@@ -80,12 +81,11 @@ Itemize[
 Section[Rm"Skills"];
 Itemize[
 [Par[Bf"Programming Languages: ";
-     (* FIXME17: continue linting this list? *)
-     Rm"C, C++, Coq, Erlang, Forth, Haskell, ";Tt"m4";Rm", OCaml, Perl, Python, Rust, Scheme, ";
+     Rm"C, C++, Coq, Erlang, Forth, Haskell, JavaScript, ";Tt"m4";
+     Rm", OCaml, Perl, Python, Rust, Scheme, ";
      Tt"sh";Rm"/";Tt"sed";Rm"/";Rm"AWK; ";Spec"TeX";Rm"/";Spec"LaTeX";
      Rm", x86 assembly (i386, x86_64)"]];
 [Par[Bf"Operating Systems: ";
-     (* FIXME17: continue linting this list? *)
      Rm"Linux (Debian), FreeBSD, NetBSD, VMware ESXi"]];
 [Par[Bf"Revision Control: ";
      Rm"Git, Mercurial, Subversion, Perforce, CVS"]];
