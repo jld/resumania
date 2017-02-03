@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e -u
-SRC=r2012
+SRC=r2017
 DST=jld
 set -x
 git branch -D redacted || true
