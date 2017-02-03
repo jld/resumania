@@ -20,14 +20,13 @@ Subsect[Rm"Software Engineer"];
 Par[Bf"Mozilla Corporation";Rm", February 2013 - present"];
 Itemize[
 (* Should I just name Firefox/Gecko/FxOS instead of being generic? *)
+(* Especially given that I name NetBSD elsewhere *)
 [Par[Rm"Designed and implemented system-level security sandboxing technology for a Web renderer"]];
 [Par[Rm"Refactored legacy code for asynchrony and process separation"]];
 [Par[Rm"Developed tools to investigate system-level performance on a novel mobile OS"]]
 (* Some recognition of the NSS work would be nice, but hard to summarize *)
 (* Also this could surely be made to sound more impressive (cf. the older jobs) *)
 ];
-
-(* FIXME17: make sure the months are correct before sending this anywhere *)
 
 Subsect[Rm"Member of Technical Staff"];
 (* What's the best way to indicate organizational unit? *)
@@ -46,47 +45,22 @@ Itemize[
      Rm"a class of memory usage errors"]]
 ];
 
-(* FIXME17: take a chainsaw to the rest of this.  Consider merging it all
-into a "Previously" section somehow.  Especially consider removing
-anything that's long enough ago that I couldn't explain it coherently
-in an interview.  And expanding vagueness like "improve fault tolerance" *)
+Subsect[Rm"Previously:"];
+(* Is it suboptimal that I'm eliding employer names? *)
+(* Did I trim too much from the originals? *)
 
-Subsect[Rm"Graduate Teaching Assistant and Research Assistant"];
-Par[Bf"Northeastern University";Rm", January 2008 - May 2010"];
-(* This section is still a little... unfortunate, but then so was grad school. *)
+(* ## Grad school ## *)
 Itemize[
-[Par[Rm"Explored potential applications of NAND flash memory to transparent persistence ";
+[Par[Rm"Researched potential applications of NAND flash memory to transparent persistence ";
      Rm"in garbage-collected managed runtime environments."]];
-[Par[Rm"Wrote and managed homework submission software, graded assignments, and developed testing tools"]];
-(* Should that be multiple points? Not worth burning vspace on, but reads oddly. *)
-[Par[Rm"Led and oversaw laboratory exercises" (* fixme: make this longer and less bad *)]];
-[Par[Rm"Investigated novel applications and combinations of verification techniques"]];
-[Par[Rm"Assisted with reviewing papers for conferences"]]
-];
 
-Subsect[Rm"Student Developer"(* ??? *)];
-Par[Bf"Google Summer of Code";Rm", May 2009 - August 2009"];
-Itemize[
-(* "fault tolerance" may not be the term I want here? *)
-[Par[Rm"Extended NetBSD's software RAID driver to improve fault tolerance"]];
-[Par[Rm"Had work accepted for inclusion in the next major and minor NetBSD releases"]]
-];
+(* ## GSoC ## *)
+[Par[Rm"Improved crash recovery efficiency of NetBSD's software RAID driver"]];
 
-Subsect[Rm"Systems Programmer / System Administrator"];
-Par[Bf"Public Access Networks Corp. (Panix)";Rm", February 2004 - December 2006"];
-Itemize[
- (* *All* of this needs hit with a stick. *)
-[Par[Rm"Modified and extended a large existing codebase to the needs of a managed server product"]];
- (* That means GCS; can it sound more epic? *)
-[Par[Rm"Installed and upgraded software for internal and customer use, under an in-house package system"]];
- (* fixme: convey that I compiled it with stone knives and bearskins *)
-(*[Par[Rm"Redesigned backup system to increase retention and decrease administrative overhead"]];*)
-[Par[Rm"Gained primary responsibility for email system; significantly improved its performance"]];
-[Par[Rm"Analyzed and corrected defects in the NetBSD kernel, including Xen paravirtual drivers"]];
-[Par[Rm"Had 24-hour on-call responsibilities, both rotating and permanent"]]
-(* include: asst'd infrastructure (conserver, libcheck, ...), ??? *)
+(* ## Panix ## *)
+[Par[Rm"Had primary responsibility for a small ISP's email system; significantly improved its performance"]];
+[Par[Rm"Analyzed and corrected defects in the NetBSD kernel, including Xen paravirtual drivers"]]
 ];
-
 
 Section[Rm"Education"];
 (* Is this how I want to format this? *)
@@ -103,21 +77,20 @@ Itemize[
 [Par[Rm"Honors project: composable object-orientation for agent-based modelling"]]
 ];
 
-
 Section[Rm"Skills"];
 Itemize[
 [Par[Bf"Programming Languages: ";
-     (* FIXME17: lint this list. *)
-     Rm"C, C++, Coq, Erlang, Forth, Java, ";Tt"m4";Rm", OCaml, Perl, Python, Rust, Scheme, ";
+     (* FIXME17: continue linting this list? *)
+     Rm"C, C++, Coq, Erlang, Forth, Haskell, ";Tt"m4";Rm", OCaml, Perl, Python, Rust, Scheme, ";
      Tt"sh";Rm"/";Tt"sed";Rm"/";Rm"AWK; ";Spec"TeX";Rm"/";Spec"LaTeX";
      Rm", x86 assembly (i386, x86_64)"]];
 [Par[Bf"Operating Systems: ";
-     (* FIXME17: lint this list, also I can cite FreeBSD. *)
-     Rm"Linux (Debian), NetBSD, VMware ESXi"]];
+     (* FIXME17: continue linting this list? *)
+     Rm"Linux (Debian), FreeBSD, NetBSD, VMware ESXi"]];
 [Par[Bf"Revision Control: ";
-     (* FIXME17: reorder these. *)
-     Rm"CVS, Git, Mercurial, Perforce, Subversion"]]
+     Rm"Git, Mercurial, Subversion, Perforce, CVS"]]
 (* Still not sure this section is all it can be.... *)
+(* Specifically, this reeks of being a holdover from when I was much younger. *)
 ];
 
 Section[Rm"Miscellaneous"];
