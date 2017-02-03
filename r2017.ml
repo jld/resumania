@@ -95,9 +95,8 @@ Itemize[
 
 Section[Rm"Miscellaneous"];
 Itemize[
-(* FIXME17: Rust. *)
 [Par[Rm"Judges' Prize and 3rd place, ICFP Programming Competition, 2007 (as team of one)"]];
-[Par[Rm"NetBSD Developer (full commit access), 2005 - 2012"]];
+[Par[Rm"Implemented the Rust language's optional pointer optimization"]];
 [Par[Rm"Lost the 20th International Obfuscated C Code Competition"]];
 (* What else? *)
 ];
